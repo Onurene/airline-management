@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<meta http-equiv="refresh" content="4">
+		<title>board</title>
+		<style>
+			td{padding:10px 10px 10px 10px;}
+		</style>
+	</head>
+	<body>
+		<table style='border: 1px solid black;' rules="all">
+			<tr><th>Name</th><th>Class</th></tr>
+			{% for i in l %}
+				<tr><td>{{i[0]}}</td><td>{{i[1]}}</td></tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
